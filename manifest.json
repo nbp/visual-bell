@@ -1,0 +1,40 @@
+{
+  "manifest_version": 2,
+  "version": "0.1.0",
+  "name": "Vicual Bell",
+  "description": "Make a selected area blink when they are changes.",
+  "permissions": [
+    "activeTab"
+  ],
+  "icons": {
+    "16": "data/icons/bell.svg",
+    "32": "data/icons/bell.svg",
+    "48": "data/icons/bell.svg",
+    "64": "data/icons/bell.svg",
+    "128": "data/icons/bell.svg",
+    "256": "data/icons/bell.svg",
+    "512": "data/icons/bell.svg"
+  },
+  "background": {
+    "persistent": true,
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "homepage_url": "https://github.com/nbp/visual-bell/",
+  "browser_action": {
+    "default_title": "Turn on visual bell on a given area."
+  },
+  "web_accessible_resources": [
+    "data/window/index.html"
+  ],
+  "commands": {
+    "_execute_browser_action": {}
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "visual.bell@nbp.name",
+      "strict_min_version": "90.0"
+    }
+  }
+}

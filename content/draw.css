@@ -1,0 +1,40 @@
+:root {
+    --above: 100002;
+    --less-above: 100001;
+}
+
+#visualBell_overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0);
+    z-index: var(--above);
+}
+
+#visualBell_select {
+    position: absolute;
+    width: 0px; height: 0px; top: 0px; left: 0px;
+    background-color: rgba(0,0,255,0.1);
+    z-index: var(--less-above);
+}
+
+@keyframes visualBell_converge {
+    0% {
+        outline-offset: 1000px;
+    }
+    100% {
+        outline-offset: -200px;
+    }
+}
+
+.visualBell_outline {
+    outline-style: solid;
+    outline-color: red;
+    outline-width: 20px;
+    animation-name: visualBell_converge;
+    animation-duration: 0.5s;
+    animation-iteration-count: 10;
+    animation-direction: alternate;
+}
