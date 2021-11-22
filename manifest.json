@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "version": "0.1.0",
-  "name": "Vicual Bell",
+  "name": "Visual Bell",
   "description": "Make a selected area blink when they are changes.",
   "permissions": [
     "activeTab"
